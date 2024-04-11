@@ -1,11 +1,10 @@
 package acwing07_class_interface;
 
-import java.util.*;
-
-// 一个源文件可以有多个非public类，带上public就不行了
-class Point {
+public class Point {
     private int x;
     private int y;
+
+    // 构造函数
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
@@ -29,12 +28,5 @@ class Point {
 
     public String toString() {
         return String.format("(%d, %d)", x, y);
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-        Point point = new Point(2, 3);
-        System.out.println(point.toString());
-        System.out.println("Hello");
     }
 }
